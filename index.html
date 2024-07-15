@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Timer</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div id="container-header">
+
+         <div class="positionCenter">
+            <div class="background">
+               <div id="particles-js"></div>        
+            </div>
+            <div>
+               <h1>Studying time</h1>
+            </div>
+         </div> 
+         <form>
+            <div class="positionCenter container-visible">
+               <label><input id="inputMinutes" type="text" placeholder="mm">minutes</label>
+               <label><input id="inputSeconds" type="text" placeholder="ss">seconds</label>
+            </div>
+            <!-- <div class="positionCenter">
+               <h1 class="hiddenHeader">Time to rest</h1>
+            </div>
+            <div class="positionCenter container-visible">
+               <label class="hidden"><input id="restMinutes" type="text" placeholder="mm">minutes</label>
+               <label class="hidden"><input id="restSeconds" type="text" placeholder="ss">seconds</label>     
+            </div> -->
+            <div class="positionCenter">
+               <button id="btnSubmit">START</button>
+               <!-- <button id="add">Add rest time</button> -->
+            </div>     
+         </form>
+      </div>
+      <div id="big-container">
+         <div class="positionCenter" id="container-timer">
+            <p id="countdown">00 : 00</p>
+         </div>
+         <!-- <div id="container-message">
+            <p id="countdownMessage">Take your time</p>
+         </div> -->
+      </div>
+      <div class="positionCenter" id="buttons">
+         <button id="pause">PAUSE</button>
+         <button id="resume">RESUME</button>
+      </div>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
